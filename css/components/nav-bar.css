@@ -1,0 +1,12 @@
+/* 니꼬쌤은 .nav에 주었던데 왜 .nav__list에 padding과 background-color를 주면 안되는가?  */
+.nav__list {
+  padding: 20px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  background-color: var(--orange);
+  border-top: 0.1px solid rgba(255, 255, 255, 0.9);
+}
+.nav__link {
+  color: rgba(255, 255, 255, 0.9);
+}
