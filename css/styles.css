@@ -1,31 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=MuseoModerno:wght@200;400;600&display=swap");
-.status-bar {
-  display: flex;
-  justify-content: center;
-}
-.status-bar__column {
-  width: 33%;
-}
-.status-bar__column:first-child span {
-  margin-right: 5px;
-}
-.status-bar__column:nth-child(2) {
-  display: flex;
-  justify-content: center;
-}
-.status-bar__column:last-child {
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-}
-.status-bar__column:last-child span {
-  margin: 0px 5px;
-}
-.status-bar__column .fa-bolt {
-  margin-left: 5px;
-}
-/* 여기서 .status-bar__column랑 .fa-bolt사이에 공백이 없으면 작동이 되지 않음.*/
+@import "reset.css";
+@import "status-bar.css";
+
 body {
   font-family: "MuseoModerno", cursive;
   background-color: cornflowerblue;
+}
+.welcome-header {
+  margin-top: 10%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* 여기서 display: flex;를 할 수도 있겠지만, header에 있는 대부분이 ㅅext이기 때문에 그냥 text-align을 써도 됨. 하지만 정렬해야되어서 diplay: flex; 추가함.그런데 이렇게 하면 타이틀과 텍스트가 나란히 정렬되게 됨. 그래서 flex-direction:column;을 써서 위 아래로 놓이도록 해야됨. */
+  margin-bottom: 15%;
+}
+.welcome-header__title {
+  margin-bottom: 5%;
+  font-size: 25px;
+  font-weight: 500;
+}
+.welcome-header__text {
+  width: 60%;
+  opacity: 0.7;
+  font-weight: 200;
 }
