@@ -10,6 +10,7 @@
 
 /* screens */
 @import "screens/login.css";
+@import "screens/friend.css";
 
 body {
   font-family: "MuseoModerno", cursive;
