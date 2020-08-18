@@ -1,3 +1,7 @@
+.user-component {
+  justify-content: space-between;
+}
+
 .user-component,
 .user-component__column:first-child {
   display: flex;
@@ -10,7 +14,7 @@
   margin-right: 10px;
 }
 .user-component__title {
-  font-weight: bold;
+  font-weight: 600;
   font-size: 20px;
 }
 .user-component__subtitle {
@@ -27,4 +31,11 @@
   width: 60px;
   height: 60px;
   border-radius: 25px;
+}
+.user-component__title--not-bold {
+  font-weight: 500;
+}
+
+.user-component__column:last-child {
+  color: rgba(0, 0, 0, 0.5);
 }
