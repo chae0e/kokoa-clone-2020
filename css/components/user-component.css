@@ -1,5 +1,6 @@
 .user-component {
   justify-content: space-between;
+  margin-top: 20px;
 }
 
 .user-component,
@@ -38,4 +39,14 @@
 
 .user-component__column:last-child {
   color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  /* 아까 여기까지는 잘 했는데, 나란히 가게 되었을때 아닌가..해서 그냥 다시 고민 시작했음. 나란히 되었을 때는 flex-direction: 을 돌리면 되지.; */
+  flex-direction: column;
+  align-items: flex-end;
+  /* 하지만 이것을 작성함으써 friend페이지의 2> 이 부분이 깨져버림.따라서 이것을 간단히 해결하기 위해서는 friend에 가서 last에 해당하는 애들을 div안에 넣어주면 됨. */
+}
+.user-component__time {
+  margin-bottom: 10px;
+  /* 이렇게만하면 아무런 변화가 없어. 왜냐하면 이것이 span이기 때문이지. 그래서 block으로 바꿔줘야됨. */
+  display: block;
 }

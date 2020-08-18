@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="css/styles.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Friends - KokoaClone</title>
+    <title>Chats - KokoaClone</title>
   </head>
   <body>
     <div class="status-bar">
@@ -25,60 +25,30 @@
     </div>
 
     <header class="screen-header">
-      <h1 class="screen-header__title">Friends</h1>
+      <h1 class="screen-header__title">Chats</h1>
       <div class="screen-header__icons">
         <span><i class="fas fa-search fa-lg"></i></span>
+        <span><i class="far fa-comment-dots fa-lg"></i></span>
         <span><i class="fas fa-music fa-lg"></i></span>
         <span><i class="fas fa-cog fa-lg"></i></span>
       </div>
     </header>
 
-    <a id="friends-display-link">
-      <i class="fas fa-info-circle"></i>
-      <span>Friends' Names Display</span>
-      <i class="fas fa-chevron-right fa-xs"></i>
-    </a>
-    <main class="friends-screen">
+    <main class="main-screen">
       <div class="user-component">
         <div class="user-component__column">
-          <img
-            src="css/img/profile_userK.png"
-            class="user-component__avatar user-component__avatar--xl"
-          />
+          <img src="css/img/katya.jpg" class="user-component__avatar" />
           <div class="user-component__text">
-            <h4 class="user-component__title">Chae</h4>
-            <!-- <h6 class="user-component__subtitle">this is the test version</h6> -->
+            <h4 class="user-component__title">welovekatya</h4>
+            <h6 class="user-component__subtitle">
+              Hello, I'm Katrina Zamolochicova but u can call me Katya
+            </h6>
           </div>
         </div>
-        <div class="user-component__column"></div>
-      </div>
-      <div class="friends-screen__channel">
-        <div class="friends-screen__channel-header">
-          <span>channel</span>
-          <i class="fas fa-chevron-up fa-xs"></i>
-        </div>
-        <div class="user-component">
-          <div class="user-component__column">
-            <img
-              src="css/img/짬뽕.png"
-              class="user-component__avatar user-component__avatar--sm"
-            />
-            <div class="user-component__text">
-              <h4 class="user-component__title user-component__title--not-bold">
-                Channel
-              </h4>
-            </div>
-          </div>
-          <div class="user-component__column">
-            <div>
-              <span>2</span>
-              <i class="fas fa-chevron-right fa-xs"></i>
-            </div>
-            <!-- flex-direction: column; align-items: flex-end;하지만 이것을
-            작성함으써 friend페이지의 2> 이 부분이 깨져버림.따라서 이것을 간단히
-            해결하기 위해서는 friend에 가서 last에 해당하는 애들을 div안에
-            넣어주면 됨. -->
-          </div>
+        <div class="user-component__column">
+          <span class="user-component__time">22:22</span>
+          <div class="badge">2</div>
+          <!-- 여기 빨강색 알림 숫자가 계속 반복되는 것을 알 수 있어. 그래서 component로 따로 만들어서 계속 계속 써먹을꺼야. 이렇듯 코딩에서는 지속적으로 반복되는 요소들을 묶는 작업이 필요해. -->
         </div>
       </div>
     </main>
@@ -88,13 +58,13 @@
       <ul class="nav__list">
         <li class="nav__btn">
           <a class="nav__link" href="friends.html"
-            ><i class="fas fa-user fa-2x"></i
+            ><i class="far fa-user fa-2x"></i
           ></a>
         </li>
         <li class="nav__btn">
           <a class="nav__link" href="chats.html">
             <span class="nav__notification badge">9</span>
-            <i class="far fa-comment fa-2x"></i>
+            <i class="fas fa-comment fa-2x"></i>
           </a>
         </li>
         <li class="nav__btn">
