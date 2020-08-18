@@ -18,3 +18,13 @@
   font-size: 15px;
   margin-top: 10px;
 }
+.user-component__avatar--xl {
+  width: 80px;
+  height: 80px;
+  border-radius: 35px;
+}
+.user-component__avatar--sm {
+  width: 60px;
+  height: 60px;
+  border-radius: 25px;
+}
