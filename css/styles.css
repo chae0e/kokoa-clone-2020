@@ -17,6 +17,7 @@
 body {
   font-family: "MuseoModerno", cursive;
   background-color: cornflowerblue;
+  height: 200vh;
 }
 .main-screen {
   padding: 0px var(--horizontal-space);
