@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="css/styles.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ㅡMore - KokoaClone</title>
+  </head>
+  <body>
+    <div class="status-bar">
+      <div class="status-bar__column">
+        <span>No Servie</span>
+        <i class="fas fa-wifi"></i>
+      </div>
+      <div class="status-bar__column">
+        <span>18:43</span>
+        <!--javascript로 시간을 실시간으로 넣을 수도 있을듯!-->
+      </div>
+      <div class="status-bar__column">
+        <i class="fas fa-lock"></i>
+        <span>100%</span>
+        <i class="fas fa-battery-full"></i>
+        <i class="fas fa-bolt"></i>
+      </div>
+    </div>
+
+    <header class="screen-header">
+      <h1 class="screen-header__title">More</h1>
+      <div class="screen-header__icons">
+        <span><i class="fas fa-search fa-lg"></i></span>
+        <span><i class="fas fa-music fa-lg"></i></span>
+        <!-- To Do : 알림 점 만들기.  -->
+        <span><i class="fas fa-cog fa-lg"></i></span>
+      </div>
+    </header>
+
+    <main class="main-screen more-screen">
+      <div class="user-component">
+        <div class="user-component__column">
+          <img
+            src="css/img/profile_userK.png"
+            class="user-component__avatar user-component__avatar--xl"
+          />
+          <div class="user-component__text">
+            <h4 class="user-component__title">Chae</h4>
+            <h6 class="user-component__subtitle">
+              +82-10-1234-2828
+            </h6>
+            <!-- 아래 느낌표 해결하기. 번호랑 같은 줄이 되게하려면? 
+            <span class="user-component__alert">!</span>-->
+          </div>
+        </div>
+        <div class="user-component__column">
+          <i class="fas fa-sms fa-2x"></i>
+        </div>
+      </div>
+      <div class="icon-row">
+        <div class="icon-row__icon">
+          <i class="far fa-calendar-alt"></i>
+          <span>Calendar</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="fas fa-archive"></i>
+          <span>Talk Drive</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="far fa-smile"></i>
+          <span>Emoticons</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="fas fa-paint-roller"></i>
+          <span>Themes</span>
+        </div>
+      </div>
+      <div class="icon-row">
+        <div class="icon-row__icon">
+          <i class="fas fa-qrcode"></i>
+          <span>Account</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="fas fa-address-book"></i>
+          <span>Openchat</span>
+        </div>
+        <!-- <div class="icon-row__icon"> 
+          <i class="fas fa-user-plus"></i>
+          <span>Emoticons</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="far fa-envelope"></i>
+          <span>Themes</span>
+        </div>-->
+      </div>
+      <div class="more-suggestions">
+        <h4 class="more-suggestions__title">Suggestions</h4>
+        <div class="more-suggestions__icons">
+          <div class="more-suggestions__icon">
+            <div class="more-suggestions__icon-image">
+              <img src="css/img/bosh.png" />
+            </div>
+            <span class="more-suggestions__icon-text">KaKaostory</span>
+          </div>
+          <div class="more-suggestions__icon">
+            <div class="more-suggestions__icon-image">
+              <img src="css/img/bosh.png" />
+            </div>
+            <span class="more-suggestions__icon-text">KaKaostory</span>
+          </div>
+          <div class="more-suggestions__icon">
+            <div class="more-suggestions__icon-image">
+              <img src="css/img/bosh.png" />
+            </div>
+            <span class="more-suggestions__icon-text">KaKaostory</span>
+          </div>
+          <div class="more-suggestions__icon">
+            <div class="more-suggestions__icon-image">
+              <img src="css/img/bosh.png" />
+            </div>
+            <span class="more-suggestions__icon-text">KaKaostory</span>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <nav class="nav">
+      <!-- 지난번 수업에서는 id랑 선택자랑 합쳐서 css 스타일 꾸며주는 것 보았는데, 사실 그것 매우 귀찮고 가독성이 떨어지는 작업이야. 그래서 이번 friend html에서는 class만 써서 해본다고 함. -->
+      <ul class="nav__list">
+        <li class="nav__btn">
+          <a class="nav__link" href="friends.html"
+            ><i class="far fa-user fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="chats.html">
+            <span class="nav__notification badge">9</span>
+            <i class="far fa-comment fa-2x"></i>
+          </a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="find.html"
+            ><i class="fas fa-search fa-2x"></i
+          ></a>
+        </li>
+        <li class="nav__btn">
+          <a class="nav__link" href="more.html">
+            <div class="nav_notification"></div>
+            <i class="fas fa-ellipsis-h fa-2x"></i
+          ></a>
+        </li>
+      </ul>
+    </nav>
+    <script
+      src="https://kit.fontawesome.com/004d579f6b.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
