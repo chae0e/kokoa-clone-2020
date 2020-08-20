@@ -1,0 +1,24 @@
+.settings-list {
+  margin-top: 30px;
+}
+.settings__setting {
+  padding: 30px 0px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: rgba(0, 0, 0, 0.7);
+}
+.settings__setting i {
+  margin-right: 20px;
+  font-size: 25px;
+}
+.settings__setting-column {
+  display: flex;
+  align-items: center;
+}
+.settings__setting-column:last-child {
+  opacity: 0.5;
+}
+/* 여기 .settings__setting-column:last-child는 settings__setting-colum 이 두개 있으면 두번째가, 3개 있으면 3번째 애가 opacity 0.5각게 하라는 명령어임. */
