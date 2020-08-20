@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chat with welovekatya - KokoaClone</title>
   </head>
-  <body>
+  <body id="chat-screen">
     <div class="status-bar">
       <div class="status-bar__column">
         <span>No Servie</span>
@@ -26,71 +26,32 @@
     </div>
     <header class="alt-header">
       <div class="alt-header__column">
-        <i class="fas fa-angle-left fa-2x"></i>
+        <a href="chats.html"><i class="fas fa-angle-left fa-2x"></i></a>
       </div>
       <div class="alt-header__column">
-        <h1 class="alt-header__title">welovekatya</h1>
+        <h1 class="alt-header__title">katya</h1>
       </div>
       <div class="alt-header__column">
-        <i class="fas fa-search fa-2x"></i>
-        <i class="fas fa-grip-lines fa-2x"></i>
+        <span><i class="fas fa-search fa-2x"></i></span>
+        <span><i class="fas fa-bars fa-2x"></i></span>
       </div>
     </header>
-    <main class="main-screen">
-      <ul class="settings-list">
-        <li class="settings__setting">
-          <div class="settings__setting-column">
-            <i class="fas fa-bullhorn"></i>
-            <span>Notices</span>
+    <main class="main-screen main-chat">
+      <div class="chat__timestamp">
+        Tuesday, July 19, 2020
+      </div>
+      <div class="message-row">
+        <img src="css/img/하트.png" />
+        <div class="message-row__content">
+          <span class="message__sender">Katya</span>
+          <div class="message__column-info">
+            <span class="message__text">Hello👋</span>
+            <div class="message__time">21:27</div>
           </div>
-          <div class="settings__setting-column"></div>
-        </li>
-        <li class="settings__setting">
-          <div class="settings__setting-column">
-            <i class="fas fa-flask"></i>
-            <span>Kokoa Lab</span>
-          </div>
-          <div class="settings__setting-column"></div>
-        </li>
-        <li class="settings__setting">
-          <div class="settings__setting-column">
-            <i class="fas fa-info-circle"></i>
-            <span>Version</span>
-          </div>
-          <div class="settings__setting-column">
-            <span>Latest Version</span>
-          </div>
-        </li>
-      </ul>
+        </div>
+      </div>
     </main>
 
-    <nav class="nav">
-      <!-- 지난번 수업에서는 id랑 선택자랑 합쳐서 css 스타일 꾸며주는 것 보았는데, 사실 그것 매우 귀찮고 가독성이 떨어지는 작업이야. 그래서 이번 friend html에서는 class만 써서 해본다고 함. -->
-      <ul class="nav__list">
-        <li class="nav__btn">
-          <a class="nav__link" href="friends.html"
-            ><i class="far fa-user fa-2x"></i
-          ></a>
-        </li>
-        <li class="nav__btn">
-          <a class="nav__link" href="chats.html">
-            <span class="nav__notification badge">9</span>
-            <i class="far fa-comment fa-2x"></i>
-          </a>
-        </li>
-        <li class="nav__btn">
-          <a class="nav__link" href="find.html"
-            ><i class="fas fa-search fa-2x"></i
-          ></a>
-        </li>
-        <li class="nav__btn">
-          <a class="nav__link" href="more.html">
-            <div class="nav_notification"></div>
-            <i class="fas fa-ellipsis-h fa-2x"></i
-          ></a>
-        </li>
-      </ul>
-    </nav>
     <script
       src="https://kit.fontawesome.com/004d579f6b.js"
       crossorigin="anonymous"
