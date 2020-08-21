@@ -72,11 +72,13 @@
 }
 .message-row--own .message__bubble {
   background-color: cornflowerblue;
+  color: black;
   border-top-right-radius: 0px;
   border-top-left-radius: 10px;
   margin-right: 0;
   margin-left: 10px;
 }
+
 .message-row--own .message__column-info {
   flex-direction: row-reverse;
 }
