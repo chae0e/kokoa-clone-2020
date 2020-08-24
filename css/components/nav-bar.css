@@ -38,7 +38,7 @@
   /* right: 1px; 이렇게 줬더니 휙하고 저 멀리 가버렸어. 왜? 왜냐하면 이 nav__notification을 갖고 있는 container에다가 relative하게 속성을 만들어주지 않으면 얘는 body를 기준으로 움직이기 때문.*/
   animation: notificationAnimation 1.4s ease-in-out infinite;
 }
-a > div {
+.nav a > div {
   background-color: tomato;
   box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.2);
   width: 6px;
